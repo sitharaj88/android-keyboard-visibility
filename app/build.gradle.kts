@@ -42,8 +42,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(project(":keyboard"))  // Including the local library
-//    implementation(libs.android.keyboard.visibility)
+//    implementation(project(":keyboard"))  // Including the local library
+    implementation(libs.android.keyboard.visibility)
 
 
     testImplementation(libs.junit)
