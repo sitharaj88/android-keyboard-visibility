@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)  // Library plugin
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("maven-publish")
 }
 
 android {
@@ -43,3 +44,26 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
+
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            afterEvaluate {
+                from(components["release"])
+
+                groupId = "com.github.sitharaj88"
+                artifactId = "android-keyboard-visibility"
+                version = "1.0.4"
+            }
+        }
+    }
+    repositories {
+        maven {
+            url = uri("https://jitpack.io")
+        }
+    }
+}
+
+
+

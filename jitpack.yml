@@ -1,2 +1,3 @@
 install:
-  - ./gradlew :keyboard:assembleRelease
+  - ./gradlew clean :keyboard:assembleRelease :keyboard:publish
+
