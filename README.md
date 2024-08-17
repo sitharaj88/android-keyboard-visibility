@@ -96,14 +96,16 @@ dependencies {
 To start listening for keyboard visibility events, you can use the following in your activity or fragment:
 
 ```kotlin
-import com.sitharaj.keyboardvisibility.KeyboardVisibilityEvent
+import com.sitharaj.keyboardvisibility.keyboardVisibility
 
 // In your Activity or Fragment
-KeyboardVisibilityEvent.setEventListener(this) { isVisible ->
-    if (isVisible) {
-        // Keyboard is visible
-    } else {
-        // Keyboard is hidden
+keyboardVisibility {
+    onVisible {
+        Toast.makeText(this@MainActivity, "Keyboard is visible", Toast.LENGTH_SHORT).show()
+    }
+
+    onHidden {
+        Toast.makeText(this@MainActivity, "Keyboard is hidden", Toast.LENGTH_SHORT).show()
     }
 }
 ```
