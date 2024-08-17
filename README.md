@@ -31,7 +31,7 @@ Add the dependency to your app's `build.gradle.kts` file:
 
 ```kotlin
 dependencies {
-    implementation("com.github.sitharaj88:android-keyboard-visibility:1.0.5")
+    implementation("com.github.sitharaj88:android-keyboard-visibility:1.0.0")
 }
 ```
 
@@ -52,7 +52,7 @@ Add the dependency to your app's `build.gradle` file:
 
 ```groovy
 dependencies {
-    implementation "com.github.sitharaj88:android-keyboard-visibility:1.0.5"
+    implementation "com.github.sitharaj88:android-keyboard-visibility:1.0.0"
 }
 ```
 
@@ -75,7 +75,7 @@ dependencyResolutionManagement {
 
 ```toml
 [versions]
-android-keyboard-visibility = "1.0.5"
+android-keyboard-visibility = "1.0.0"
 
 [libraries]
 keyboard-visibility = { group = "com.github.sitharaj88", name = "android-keyboard-visibility", version.ref = "android-keyboard-visibility" }
