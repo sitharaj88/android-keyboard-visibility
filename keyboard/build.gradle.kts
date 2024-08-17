@@ -54,7 +54,7 @@ publishing {
 
                 groupId = "com.github.sitharaj88"
                 artifactId = "android-keyboard-visibility"
-                version = "1.0.5"
+                version = "1.0.0"
             }
         }
     }
