@@ -54,14 +54,12 @@ publishing {
 
                 groupId = "com.github.sitharaj88"
                 artifactId = "android-keyboard-visibility"
-                version = "1.0.4"
+                version = "1.0.5"
             }
         }
     }
     repositories {
-        maven {
-            url = uri("https://jitpack.io")
-        }
+        mavenLocal() // Publishes to the local .m2 repository
     }
 }
 
